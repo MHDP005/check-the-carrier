@@ -10,6 +10,7 @@ Built as a static HTML/CSS site. No build step. No live affiliate links.
 - `/guides/check-a-waste-carrier.html` — how to check a waste carrier is licensed
 - `/guides/skip-vs-skip-bag-vs-man-and-van.html` — comparison guide
 - `/areas/slough.html` — first local page for Slough and Langley
+- `/areas/windsor.html` — local page for Windsor (listings verified 20 November 2026)
 
 ## Preview locally
 
