@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://mhdp005.github.io/check-the-carrier/sitemap.xml
