@@ -12,6 +12,7 @@ Built as a static HTML/CSS site. No build step. No live affiliate links.
 - `/guides/skip-sizes.html` — skip size guide (published figures checked 21 November 2026)
 - `/areas/slough.html` — first local page for Slough and Langley
 - `/areas/windsor.html` — local page for Windsor (listings verified 20 November 2026)
+- `/areas/maidenhead.html` — local page for Maidenhead, Cookham and SL6 (listings verified 22 November 2026)
 
 ## Preview locally
 
