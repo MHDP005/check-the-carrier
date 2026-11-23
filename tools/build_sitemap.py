@@ -17,7 +17,7 @@ import sys
 from pathlib import Path
 from xml.sax.saxutils import escape
 
-BASE_URL = "https://mhdp005.github.io/check-the-carrier"
+BASE_URL = "https://checkmyskip.co.uk"
 ROOT = Path(__file__).resolve().parents[1]
 SKIP_DIRS = {".git", "tools", "screenshots", "assets"}
 

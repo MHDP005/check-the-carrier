@@ -42,8 +42,11 @@ python3 tools/build_sitemap.py
 
 The nightly routine must run that script so `sitemap.xml` stays complete.
 
+## Live site
+
+The site is published on GitHub Pages at [https://checkmyskip.co.uk/](https://checkmyskip.co.uk/). The previous project URL, `https://mhdp005.github.io/check-the-carrier/`, should redirect once the custom domain is attached.
+
 ## Search engines
 
-- `sitemap.xml` lists every HTML page with an absolute URL under `https://mhdp005.github.io/check-the-carrier/`.
-- `robots.txt` points crawlers at that sitemap. Google only reads `robots.txt` at the site root (`https://mhdp005.github.io/robots.txt`), not at a project subpath, so this file will not control crawling while the site is served from `/check-the-carrier/`. The sitemap can still be submitted in Google Search Console.
-- Once the site has its own domain, move `robots.txt` to that domain root so Google will honour it.
+- `sitemap.xml` lists every HTML page with an absolute URL under `https://checkmyskip.co.uk/`.
+- `robots.txt` sits at the domain root and points crawlers at that sitemap, so Google will honour it once the custom domain is serving the site.
