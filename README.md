@@ -14,6 +14,7 @@ Built as a static HTML/CSS site. No build step. No live affiliate links.
 - `/areas/slough.html` — first local page for Slough and Langley
 - `/areas/windsor.html` — local page for Windsor (listings verified 20 November 2026)
 - `/areas/maidenhead.html` — local page for Maidenhead, Cookham and SL6 (listings verified 22 November 2026)
+- `/areas/staines.html` — local page for Staines-upon-Thames, Spelthorne and TW18 (listings verified 24 November 2026)
 
 ## Preview locally
 
