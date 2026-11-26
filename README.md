@@ -16,6 +16,7 @@ Built as a static HTML/CSS site. No build step. No live affiliate links.
 - `/areas/windsor.html` — local page for Windsor (listings verified 20 November 2026)
 - `/areas/maidenhead.html` — local page for Maidenhead, Cookham and SL6 (listings verified 22 November 2026)
 - `/areas/staines.html` — local page for Staines-upon-Thames, Spelthorne and TW18 (listings verified 24 November 2026)
+- `/areas/uxbridge.html` — local page for Uxbridge, Hillingdon and UB8/UB10, with Hillingdon skip permits and Harefield Civic Amenity Site rules (listings verified 26 November 2026)
 
 ## Preview locally
 
