@@ -1,4 +1,4 @@
-# Check the Carrier
+# Check My Skip
 
 Version one of an independent UK directory for licensed skip hire, skip bags and junk/man-and-van removal.
 

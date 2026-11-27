@@ -1,6 +1,6 @@
 {
   "_readme": "Single source of truth for nav, footer, home-page cards, the area picker and photo credits. After editing, run: python3 tools/build_site.py",
-  "site_name": "Check the Carrier",
+  "site_name": "Check My Skip",
   "base_url": "https://checkmyskip.co.uk",
   "areas": [
     {
