@@ -12,6 +12,7 @@ Built as a static HTML/CSS site. No live affiliate links. One small Python scrip
 - `/guides/skip-sizes.html` — skip size guide (published figures checked 21 November 2026)
 - `/guides/what-cant-go-in-a-skip.html` — what you can’t put in a skip, and the legal route for each item (sources checked 23 November 2026)
 - `/guides/skip-permits.html` — when a skip on the highway needs a council permit, who applies, and published fees/timescales for Slough, RBWM, Surrey, Hillingdon and Buckinghamshire (sources checked 25 November 2026)
+- `/guides/garden-waste.html` — garden waste: 2026/27 council garden bin prices for Slough, RBWM, Spelthorne and Hillingdon, local tips, soil/turf DIY limits, Japanese knotweed and bonfire rules (sources checked 27 November 2026)
 - `/areas/slough.html` — first local page for Slough and Langley
 - `/areas/windsor.html` — local page for Windsor (listings verified 20 November 2026)
 - `/areas/maidenhead.html` — local page for Maidenhead, Cookham and SL6 (listings verified 22 November 2026)

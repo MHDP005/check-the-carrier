@@ -84,6 +84,14 @@
       "blurb": "Road, pavement or verge? Who applies and what each council charges.",
       "icon": "i-cone",
       "image": "skip-on-road"
+    },
+    {
+      "path": "guides/garden-waste.html",
+      "name": "Garden waste",
+      "card_title": "Garden waste: bin, tip or skip?",
+      "blurb": "Council garden bin prices from £55, free tips, and soil and knotweed rules.",
+      "icon": "i-leaf",
+      "image": "garden-compost-bins"
     }
   ],
   "images": {
@@ -223,6 +231,20 @@
       "changes": "cropped and resized",
       "widths": [
         640
+      ],
+      "ratio": "3:2"
+    },
+    "garden-compost-bins": {
+      "alt": "A row of wooden compost bins on the grass beside a flowering elder bush in a community garden",
+      "author": "Andy Li",
+      "licence": "CC0 1.0",
+      "licence_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Compost_bins_in_Brighthelm_Garden_2023-06-16.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        640,
+        960
       ],
       "ratio": "3:2"
     }
