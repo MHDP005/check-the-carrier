@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<!--
+  GUIDE PAGE TEMPLATE (design v2). Copy to guides/<slug>.html, replace every {{...}} placeholder,
+  delete any optional block you do not need, then:
+    1. add the page to "guides" in tools/site.json (path, name, card_title, blurb, icon, image or null);
+    2. if you add a photo, put it in "images" in tools/site.json and the files in assets/img/ (see README "Photos");
+    3. run: python3 tools/build_site.py   (fills header, nav, footer, home cards, area picker, sitemap; fails on errors).
+  Keep it plain and short: one idea per paragraph, about 2 sentences each, and put long detail inside <details class="more">.
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17694b">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <title>{{GUIDE TITLE}} — Check the Carrier</title>
+  <meta name="description" content="{{ONE-SENTENCE DESCRIPTION, under 160 characters}}">
+  <link rel="canonical" href="https://checkmyskip.co.uk/guides/{{SLUG}}.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Check the Carrier">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="{{GUIDE TITLE}} — Check the Carrier">
+  <meta property="og:description" content="{{SAME AS DESCRIPTION}}">
+  <meta property="og:url" content="https://checkmyskip.co.uk/guides/{{SLUG}}.html">
+  <meta property="og:image" content="https://checkmyskip.co.uk/assets/img/{{IMAGE-SLUG or home-skip}}-{{SMALLEST WIDTH, e.g. 640 or 800}}.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://checkmyskip.co.uk/guides/{{SLUG}}.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://checkmyskip.co.uk/" },
+        { "@type": "ListItem", "position": 2, "name": "{{GUIDE SHORT TITLE}}", "item": "https://checkmyskip.co.uk/guides/{{SLUG}}.html" }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- SITE HEADER --><!-- /SITE HEADER -->
+  <main id="main">
+    <section class="page-hero">
+      <div class="wrap page-hero-grid">
+        <div class="page-hero-text">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / {{GUIDE SHORT TITLE}}</nav>
+          <p class="kicker"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-book"/></svg> Guide</p>
+          <h1>{{GUIDE TITLE}}</h1>
+          <p class="lead">{{ONE OR TWO SENTENCES: WHAT THIS GUIDE ANSWERS}}</p>
+          <ul class="chip-row">
+            <li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg> Checked {{D Mon YYYY}}</li>
+          </ul>
+        </div>
+        <figure class="hero-photo">
+          <picture><source type="image/webp" srcset="../assets/img/{{IMG}}-640.webp 640w, ../assets/img/{{IMG}}-1200.webp 1200w" sizes="(min-width: 56rem) 32rem, 92vw"><img src="../assets/img/{{IMG}}-640.jpg" width="640" height="427" alt="{{ALT TEXT}}" fetchpriority="high" decoding="async"></picture>
+          <figcaption>Photo: <a href="{{COMMONS FILE PAGE}}">{{AUTHOR}}</a>, <a href="{{LICENCE URL}}">{{LICENCE}}</a>, via Wikimedia Commons ({{cropped and resized}}). <a href="../credits.html">All photo credits</a></figcaption>
+        </figure>
+        <!-- No photo? Use: <figure class="hero-photo"><img src="../assets/img/illustration-skips.svg" width="360" height="240" alt="Illustration of a small, medium and large skip side by side"></figure> -->
+      </div>
+    </section>
+
+    <div class="wrap content">
+      <div class="summary-grid">
+        <div class="callout callout-quick">
+          <p class="callout-title"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-bulb"/></svg> Quick answer</p>
+          <p>{{THE ANSWER IN 1-2 SENTENCES}}</p>
+        </div>
+        <div class="key-facts">
+          <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-list"/></svg> Key facts</h2>
+          <ul class="fact-list">
+            <li><span class="icon-bubble"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span><strong>{{LABEL:}}</strong> {{FACT WITH FIGURE}}</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <nav class="toc" aria-label="On this page"><p class="toc-title">Jump to</p>
+        <ul class="chip-row"><li><a class="chip" href="#{{SECTION-ID}}">{{SECTION TITLE}}</a></li></ul>
+      </nav>
+
+      <div class="callout callout-watch">
+        <p class="callout-title"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-alert"/></svg> Watch out</p>
+        <p><strong>{{HEADLINE}}</strong> Figures on this page are what each source published when we checked on {{D MONTH YYYY}} (Europe/London).</p>
+      </div>
+
+      <!-- Standard block. Callout variants: callout-tip (green, "Good to know"), callout-note (blue), callout-watch (coral), callout-quick (yellow). -->
+      <section class="block" id="{{SECTION-ID}}">
+        <h2 class="block-title"><span class="icon-bubble"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-info"/></svg></span><span>{{SECTION TITLE}}</span></h2>
+        <p>{{SHORT PARAGRAPH}}</p>
+        <details class="more"><summary>Show the full detail</summary><div class="more-body"><p>{{LONGER DETAIL}}</p></div></details>
+      </section>
+
+      <!-- Icon-card grid: for a list of items (e.g. one card per banned item) -->
+      <div class="item-grid">
+        <section class="block item-card" id="{{ITEM-ID}}">
+          <h2 class="block-title"><span class="icon-bubble coral"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-alert"/></svg></span><span>{{ITEM}}</span></h2>
+          <p>{{ONE OR TWO SENTENCES}}</p>
+          <details class="more"><summary>Show the full detail</summary><div class="more-body"><ul><li>{{LOCAL RULE}}</li></ul></div></details>
+        </section>
+      </div>
+
+      <!-- Comparison table: add class "stack" and a data-label on each td (= its column heading) so it turns into cards on phones -->
+      <section class="block" id="{{TABLE-SECTION-ID}}">
+        <h2 class="block-title"><span class="icon-bubble sky"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-layers"/></svg></span><span>{{TABLE TITLE}}</span></h2>
+        <div class="table-wrap"><table class="stack">
+          <caption class="visually-hidden">{{CAPTION}}</caption>
+          <thead><tr><th scope="col">{{COL 1}}</th><th scope="col">{{COL 2}}</th></tr></thead>
+          <tbody><tr><th scope="row">{{ROW}}</th><td data-label="{{COL 2}}">{{CELL}}</td></tr></tbody>
+        </table></div>
+      </section>
+
+      <!-- Checklist: ol.steps = numbered; ul.checklist = tick boxes -->
+      <section class="block" id="checklist">
+        <h2 class="block-title"><span class="icon-bubble"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-list"/></svg></span><span>A quick checklist</span></h2>
+        <ol class="steps"><li><strong>{{STEP}}</strong> {{DETAIL}}</li></ol>
+      </section>
+
+      <!-- AFFILIATE CTA SLOT: {{SLUG}}-end
+           Reserved for a future, approved comparison or booking widget.
+           Do not insert live affiliate or referral URLs until a deal is agreed and disclosed.
+      -->
+      <aside class="cta-placeholder">
+        <p>A quote or booking block may be added here later. This slot has no affiliate link yet.</p>
+      </aside>
+
+      <details class="sources-box" id="sources"><summary><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-book"/></svg> Sources ({{COUNT}})</summary><div>
+        <ol><li>{{SOURCE WITH LINK AND CHECK DATE}}</li></ol>
+      </div></details>
+    </div>
+  </main>
+  <!-- SITE FOOTER --><footer class="site-footer"><div class="disclosure">
+        <p>This site is not affiliated with the Environment Agency, Defra, any council or any waste company. Listings are a starting point, not a recommendation or guarantee. Always check a carrier yourself on the official register before you hire them. Registrations can expire or change.</p>
+        <p><strong>Affiliate disclosure.</strong> Some links on this site may in future be affiliate or referral links. If that happens and we earn a commission, it should not change the price you pay. We will mark those links clearly. There are no live affiliate links on this version of the site.</p>
+        <p>© 2026 Check the Carrier. Last reviewed {{D MONTH YYYY}} (Europe/London).</p>
+      </div></footer><!-- /SITE FOOTER -->
+  <script src="../assets/main.js" defer></script>
+</body>
+</html>

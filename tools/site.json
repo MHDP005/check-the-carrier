@@ -1,0 +1,230 @@
+{
+  "_readme": "Single source of truth for nav, footer, home-page cards, the area picker and photo credits. After editing, run: python3 tools/build_site.py",
+  "site_name": "Check the Carrier",
+  "base_url": "https://checkmyskip.co.uk",
+  "areas": [
+    {
+      "path": "areas/slough.html",
+      "name": "Slough & Langley",
+      "card_title": "Slough and Langley",
+      "blurb": "6 licence-checked firms, Chalvey tip and Slough skip permits.",
+      "postcodes": "SL1, SL2, SL3",
+      "image": "slough"
+    },
+    {
+      "path": "areas/windsor.html",
+      "name": "Windsor",
+      "card_title": "Windsor",
+      "blurb": "5 licence-checked firms, RBWM skip licence fees and Stafferton Way tip.",
+      "postcodes": "SL4",
+      "image": "windsor"
+    },
+    {
+      "path": "areas/maidenhead.html",
+      "name": "Maidenhead",
+      "card_title": "Maidenhead",
+      "blurb": "5 licence-checked firms, plus what Stafferton Way tip will take.",
+      "postcodes": "SL6",
+      "image": "maidenhead"
+    },
+    {
+      "path": "areas/staines.html",
+      "name": "Staines-upon-Thames",
+      "card_title": "Staines-upon-Thames",
+      "blurb": "5 licence-checked firms, Surrey’s £139 skip licence and Shepperton tip.",
+      "postcodes": "TW18",
+      "image": "staines"
+    },
+    {
+      "path": "areas/uxbridge.html",
+      "name": "Uxbridge",
+      "card_title": "Uxbridge",
+      "blurb": "5 licence-checked firms, Hillingdon’s £90 permit and Harefield tip.",
+      "postcodes": "UB8, UB10",
+      "image": "uxbridge"
+    }
+  ],
+  "guides": [
+    {
+      "path": "guides/check-a-waste-carrier.html",
+      "name": "Check a licence",
+      "card_title": "How to check a waste carrier is licensed",
+      "blurb": "The 2-minute check that keeps you on the right side of the law.",
+      "icon": "i-shield",
+      "image": "fly-tipped-mattress"
+    },
+    {
+      "path": "guides/skip-vs-skip-bag-vs-man-and-van.html",
+      "name": "Skip, bag or van?",
+      "card_title": "Skip vs skip bag vs man and van",
+      "blurb": "Which one suits your job, your drive and your budget.",
+      "icon": "i-truck",
+      "image": "skip-on-drive"
+    },
+    {
+      "path": "guides/skip-sizes.html",
+      "name": "Skip sizes",
+      "card_title": "Skip sizes explained",
+      "blurb": "4 to 12 yards, how many bin bags each holds, and skip bags.",
+      "icon": "i-skip",
+      "image": null
+    },
+    {
+      "path": "guides/what-cant-go-in-a-skip.html",
+      "name": "What can’t go in a skip",
+      "card_title": "What you can’t put in a skip",
+      "blurb": "Asbestos, fridges, tyres, mattresses and more, and where they go instead.",
+      "icon": "i-x-circle",
+      "image": "skip-and-bed"
+    },
+    {
+      "path": "guides/skip-permits.html",
+      "name": "Skip permits",
+      "card_title": "Skip permits: when you need one",
+      "blurb": "Road, pavement or verge? Who applies and what each council charges.",
+      "icon": "i-cone",
+      "image": "skip-on-road"
+    }
+  ],
+  "images": {
+    "home-skip": {
+      "alt": "A skip half full of household rubbish parked on a quiet residential street on a sunny day",
+      "author": "Bill Kasman",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Rubbish_skip_-_geograph.org.uk_-_6113546.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        800,
+        1600
+      ],
+      "ratio": "16:9"
+    },
+    "slough": {
+      "alt": "Shoppers on Slough High Street",
+      "author": "Stephen McKay",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:High_Street,_Slough_-_geograph.org.uk_-_2733155.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        640,
+        1200
+      ],
+      "ratio": "3:2"
+    },
+    "windsor": {
+      "alt": "Windsor Castle at sunset, seen from the Long Walk",
+      "author": "Diliff",
+      "licence": "CC BY 2.5",
+      "licence_url": "https://creativecommons.org/licenses/by/2.5",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Windsor_Castle_at_Sunset_-_Nov_2006.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "resized",
+      "widths": [
+        640,
+        1200
+      ],
+      "ratio": "3:2"
+    },
+    "maidenhead": {
+      "alt": "Brunel's brick railway bridge over the River Thames at Maidenhead",
+      "author": "Colin Park",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:The_%27Sounding_Arch%27_railway_bridge,_Maidenhead_-_geograph.org.uk_-_6453079.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        640,
+        1200
+      ],
+      "ratio": "3:2"
+    },
+    "staines": {
+      "alt": "The railway bridge over the River Thames at Staines-upon-Thames",
+      "author": "Jim Linwood",
+      "licence": "CC BY 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by/2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Staines_Railway_Bridge_Over_The_Thames.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        640,
+        970
+      ],
+      "ratio": "3:2"
+    },
+    "uxbridge": {
+      "alt": "The historic Market House with its clock tower on Uxbridge High Street",
+      "author": "N Chadwick",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Market_House_-_geograph.org.uk_-_6472105.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        640,
+        1024
+      ],
+      "ratio": "3:2"
+    },
+    "skip-on-road": {
+      "alt": "A skip parked on a residential road in London",
+      "author": "Alan Stanton",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Skip_%26_Bed_-_Ladysmith_Road.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        640,
+        1200
+      ],
+      "ratio": "3:2"
+    },
+    "skip-and-bed": {
+      "alt": "A mattress and bed base dumped on the pavement next to a skip on a terraced street",
+      "author": "Alan Stanton",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Skip_%26_Bed_-_Ladysmith_Road.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        640,
+        1200
+      ],
+      "ratio": "3:2"
+    },
+    "fly-tipped-mattress": {
+      "alt": "A mattress fly-tipped on a patch of waste ground",
+      "author": "Gerald England",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:A_fly-tipped_mattress_-_geograph.org.uk_-_4239871.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        640,
+        1000
+      ],
+      "ratio": "3:2"
+    },
+    "skip-on-drive": {
+      "alt": "Two skips on the gravel drive of a large brick house being restored, seen through iron railings",
+      "author": "Graham Horn",
+      "licence": "CC BY-SA 2.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/2.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Restoring_the_Old_Rectory_-_geograph.org.uk_-_450306.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        640
+      ],
+      "ratio": "3:2"
+    }
+  }
+}

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<!--
+  AREA PAGE TEMPLATE (design v2). Copy to areas/<town>.html, replace every {{...}} placeholder,
+  delete any optional block you do not need, then:
+    1. add the page to "areas" in tools/site.json (path, name, card_title, blurb, postcodes, image or null);
+    2. if you add a photo, put it in "images" in tools/site.json and the files in assets/img/ (see README "Photos");
+    3. run: python3 tools/build_site.py   (fills header, nav, footer, home cards, area picker, sitemap; fails on errors).
+  Keep it plain and short: one idea per paragraph, about 2 sentences each, and put long detail inside <details class="more">.
+-->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#17694b">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/styles.css">
+  <title>Licensed skip hire and rubbish clearance in {{TOWN}} — Check the Carrier</title>
+  <meta name="description" content="{{ONE-SENTENCE DESCRIPTION, under 160 characters}}">
+  <link rel="canonical" href="https://checkmyskip.co.uk/areas/{{SLUG}}.html">
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="Check the Carrier">
+  <meta property="og:locale" content="en_GB">
+  <meta property="og:title" content="Licensed skip hire and rubbish clearance in {{TOWN}} — Check the Carrier">
+  <meta property="og:description" content="{{SAME AS DESCRIPTION}}">
+  <meta property="og:url" content="https://checkmyskip.co.uk/areas/{{SLUG}}.html">
+  <meta property="og:image" content="https://checkmyskip.co.uk/assets/img/{{IMAGE-SLUG or home-skip}}-{{SMALLEST WIDTH, e.g. 640 or 800}}.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://checkmyskip.co.uk/areas/{{SLUG}}.html#breadcrumb",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://checkmyskip.co.uk/" },
+        { "@type": "ListItem", "position": 2, "name": "{{TOWN}}", "item": "https://checkmyskip.co.uk/areas/{{SLUG}}.html" }
+      ]
+    },
+    {
+      "@type": "ItemList",
+      "@id": "https://checkmyskip.co.uk/areas/{{SLUG}}.html#listings",
+      "name": "Licensed skip hire and clearance firms serving {{TOWN}}",
+      "numberOfItems": {{N}},
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "{{LEGAL NAME}}", "url": "{{WEBSITE}}" }
+      ]
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- SITE HEADER --><!-- /SITE HEADER -->
+  <main id="main">
+    <!-- 1. HERO: breadcrumb, kicker, H1, one-sentence lead, 2-3 chips, photo (or the built-in illustration) -->
+    <section class="page-hero">
+      <div class="wrap page-hero-grid">
+        <div class="page-hero-text">
+          <nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> / {{TOWN}}</nav>
+          <p class="kicker"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-pin"/></svg> Local directory · {{TOWN, NEARBY PLACES AND POSTCODES}}</p>
+          <h1>Skip hire and rubbish clearance in {{TOWN}}</h1>
+          <p class="lead">Businesses that, on {{D MONTH YYYY}}, had a live Environment Agency upper-tier registration and said on their own website that they serve {{TOWN}}. This is not a ranking, a recommendation or a complete list.</p>
+          <ul class="chip-row">
+            <li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg> {{N}} licence-checked firms</li>
+            <li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg> Checked {{D Mon YYYY}}</li>
+            <li class="chip"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg> {{POSTCODES}}</li>
+          </ul>
+        </div>
+        <!-- With a photo (WebP srcset + JPEG fallback, credit required by CC BY / CC BY-SA): -->
+        <figure class="hero-photo">
+          <picture><source type="image/webp" srcset="../assets/img/{{IMG}}-640.webp 640w, ../assets/img/{{IMG}}-1200.webp 1200w" sizes="(min-width: 56rem) 32rem, 92vw"><img src="../assets/img/{{IMG}}-640.jpg" width="640" height="427" alt="{{ALT TEXT: what the photo shows}}" fetchpriority="high" decoding="async"></picture>
+          <figcaption>Photo: <a href="{{COMMONS FILE PAGE}}">{{AUTHOR}}</a>, <a href="{{LICENCE URL}}">{{LICENCE}}</a>, via Wikimedia Commons ({{cropped and resized}}). <a href="../credits.html">All photo credits</a></figcaption>
+        </figure>
+        <!-- Without a photo, use this instead of the figure above:
+        <figure class="hero-photo"><img src="../assets/img/illustration-skips.svg" width="360" height="240" alt="Illustration of a small, medium and large skip side by side"></figure>
+        -->
+      </div>
+    </section>
+
+    <div class="wrap content">
+      <!-- 2. SUMMARY: a 1-2 sentence Quick answer + 4-5 Key facts. Only facts that appear lower down the page, with their figures. -->
+      <div class="summary-grid">
+        <div class="callout callout-quick">
+          <p class="callout-title"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-bulb"/></svg> Quick answer</p>
+          <p>{{WHO IS THE COUNCIL, DO YOU NEED A PERMIT, WHAT IT COSTS, IN 1-2 SENTENCES}}</p>
+        </div>
+        <div class="key-facts">
+          <h2><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-list"/></svg> Key facts</h2>
+          <ul class="fact-list">
+            <li><span class="icon-bubble"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span><strong>{{N}} firms</strong> listed, each with a live upper-tier registration when we checked on {{D MONTH YYYY}}.</span></li>
+            <li><span class="icon-bubble"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-cone"/></svg></span><span><strong>Skip on the road?</strong> {{PERMIT FEE AND WHO APPLIES}}</span></li>
+            <li><span class="icon-bubble"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-recycle"/></svg></span><span><strong>Tip:</strong> {{NAME, POSTCODE, MAIN LIMIT}}</span></li>
+            <li><span class="icon-bubble"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-sofa"/></svg></span><span><strong>Bulky items:</strong> {{COUNCIL COLLECTION PRICE}}</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- 3. JUMP LINKS: one chip per section id below -->
+      <nav class="toc" aria-label="On this page"><p class="toc-title">Jump to</p>
+        <ul class="chip-row">
+          <li><a class="chip" href="#council">{{SECTION 1 TITLE}}</a></li>
+          <li><a class="chip" href="#tip">{{SECTION 2 TITLE}}</a></li>
+          <li><a class="chip" href="#road">If the skip has to go on the road</a></li>
+          <li><a class="chip" href="#listings">Listings checked on {{D MONTH YYYY}}</a></li>
+        </ul>
+      </nav>
+
+      <!-- 4. WATCH OUT callout (keep this one on every area page) -->
+      <div class="callout callout-watch">
+        <p class="callout-title"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-alert"/></svg> Watch out</p>
+        <p><strong>Re-check the register before you book.</strong> Registrations expire and companies change. A listing here is only a starting point. Search the <a href="https://environment.data.gov.uk/public-register/view/search-waste-carriers-brokers">official Environment Agency register</a> yourself, and read our <a href="../guides/check-a-waste-carrier.html">licence-checking guide</a>.</p>
+      </div>
+
+      <!-- 5. CONTENT BLOCKS: one <section class="block"> per H2. Icon bubble tones: (none)=green, sun, coral, sky.
+           Show the first 1-2 short paragraphs; put the rest in <details class="more">. -->
+      <section class="block" id="council">
+        <h2 class="block-title"><span class="icon-bubble"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-home"/></svg></span><span>{{WHICH COUNCIL DOES WHAT}}</span></h2>
+        <p>{{SHORT PARAGRAPH}}</p>
+      </section>
+
+      <section class="block" id="tip">
+        <h2 class="block-title"><span class="icon-bubble"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-recycle"/></svg></span><span>Could you take it to {{TIP}} instead?</span></h2>
+        <p>{{ONE-PARAGRAPH INTRO WITH ADDRESS AND CHECK DATE}}</p>
+        <!-- Fact cards replace two-column "situation / what the council says" tables -->
+        <div class="fact-cards-block">
+          <p class="fact-cards-caption">{{CAPTION, e.g. What X accepts and the limits that apply, according to Y Council}}</p>
+          <div class="fact-cards">
+            <div class="fact-card"><h3><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg> <span>{{SITUATION}}</span></h3><p>{{WHAT THE COUNCIL SAYS}}</p></div>
+            <div class="fact-card"><h3><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg> <span>{{SITUATION}}</span></h3><p>{{WHAT THE COUNCIL SAYS}}</p></div>
+          </div>
+        </div>
+        <details class="more"><summary>Show the full detail</summary><div class="more-body">
+          <p>{{LONGER DETAIL}}</p>
+        </div></details>
+      </section>
+
+      <section class="block" id="road">
+        <h2 class="block-title"><span class="icon-bubble sun"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-cone"/></svg></span><span>If the skip has to go on the road</span></h2>
+        <p>{{WHO APPLIES, FEE, NOTICE}}</p>
+        <ul>
+          <li>{{RULE}}</li>
+        </ul>
+        <details class="more"><summary>Show the full detail</summary><div class="more-body"><p>{{MORE}}</p></div></details>
+      </section>
+
+      <!-- 6. LISTINGS: one card per firm. Badge date = the day you checked the register. -->
+      <section class="listings-section" id="listings" aria-labelledby="listings-h">
+        <h2 class="block-title" id="listings-h"><span class="icon-bubble"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-check"/></svg></span><span>Listings checked on {{D MONTH YYYY}}</span></h2>
+        <details class="more"><summary>How we chose these firms</summary><div class="more-body">
+          <p class="fine">Each entry includes the legal name from the Environment Agency register, the trading name where it differs, the area the business says it serves, a website we fetched, and a direct link to the official registration. We have not invented any businesses, reviews or prices; prices are as published on each firm’s website on the day we checked. {{WHO WAS LEFT OUT AND WHY}}</p>
+        </div></details>
+        <div class="listings">
+          <article class="listing">
+            <div class="listing-top">
+              <div class="listing-badges"><span class="badge-licence"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-tick"/></svg> Licence checked {{D Mon YYYY}}</span><span class="tag">{{SERVICES, e.g. Skip hire · wait and load}}</span></div>
+              <h3>{{LEGAL NAME FROM REGISTER}}</h3>
+              <p class="meta">Trading as {{TRADING NAME}} · Based in {{PLACE (POSTCODE)}} · {{AREA IT SAYS IT SERVES}}</p>
+            </div>
+            <p class="teaser">{{ONE SENTENCE: WHAT MAKES THIS FIRM DIFFERENT}}</p>
+            <details class="more"><summary>Services, prices and permits</summary><div class="more-body">
+              <p>{{SIZES, PUBLISHED PRICES (SAY + VAT OR INC VAT), HIRE PERIOD, PERMIT HANDLING}}</p>
+            </div></details>
+            <p class="reg"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-shield"/></svg><span>Registration <strong>{{CBDU NUMBER}}</strong>, upper tier ({{carrier, broker and dealer}}), listed as expiring {{D MONTH YYYY}} when checked.</span></p>
+            <div class="listing-actions">
+              <a class="btn btn-primary" href="{{WEBSITE}}">Website</a>
+              <a class="btn btn-secondary" href="https://environment.data.gov.uk/public-register/waste-carriers-brokers/registration/{{CBDU NUMBER}}">Check on the EA register</a>
+            </div>
+          </article>
+        </div>
+        <!-- AFFILIATE CTA SLOT: {{SLUG}}-after-listings
+             Reserved for a future, approved partner or referral offer for {{TOWN}}.
+             Do not insert live affiliate or referral URLs until a deal is agreed and disclosed.
+        -->
+        <aside class="cta-placeholder">
+          <p>A {{TOWN}} quote or referral block may be added here later. This slot has no affiliate link yet.</p>
+        </aside>
+        <div class="callout callout-note">
+          <p class="callout-title"><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-info"/></svg> Good to know</p>
+          <p>Know a licensed firm serving {{TOWN}} that we have missed, or spotted a registration that has expired? We will only add businesses we can verify on the official register and on the company’s own site.</p>
+          <p>Nearby: see our <a href="{{NEARBY}}.html">{{NEARBY TOWN}}</a> page.</p>
+        </div>
+      </section>
+
+      <!-- 7. SOURCES: collapsed, with the count in the summary -->
+      <details class="sources-box" id="sources"><summary><svg class="icon" aria-hidden="true" focusable="false"><use href="../assets/icons.svg#i-book"/></svg> Sources for this page ({{COUNT}})</summary><div>
+        <ol>
+          <li>{{SOURCE WITH LINK AND CHECK DATE}}</li>
+        </ol>
+      </div></details>
+    </div>
+  </main>
+  <!-- SITE FOOTER --><footer class="site-footer"><div class="disclosure">
+        <p>This site is not affiliated with the Environment Agency, Defra, {{COUNCIL NAME(S)}} or any waste company. Listings are a starting point, not a recommendation or guarantee. Always check a carrier yourself on the official register before you hire them. Registrations can expire or change.</p>
+        <p><strong>Affiliate disclosure.</strong> Some links on this site may in future be affiliate or referral links. If that happens and we earn a commission, it should not change the price you pay. We will mark those links clearly. There are no live affiliate links on this version of the site.</p>
+        <p>© 2026 Check the Carrier. Last reviewed {{D MONTH YYYY}} (Europe/London).</p>
+      </div></footer><!-- /SITE FOOTER -->
+  <script src="../assets/main.js" defer></script>
+</body>
+</html>
