@@ -42,6 +42,14 @@
       "blurb": "5 licence-checked firms, Hillingdon’s £90 permit and Harefield tip.",
       "postcodes": "UB8, UB10",
       "image": "uxbridge"
+    },
+    {
+      "path": "areas/reading.html",
+      "name": "Reading",
+      "card_title": "Reading",
+      "blurb": "6 licence-checked firms, Reading’s £99.50 skip licence and Smallmead tip rules.",
+      "postcodes": "RG1, RG2, RG4, RG30",
+      "image": "reading"
     }
   ],
   "guides": [
@@ -245,6 +253,20 @@
       "widths": [
         640,
         960
+      ],
+      "ratio": "3:2"
+    },
+    "reading": {
+      "alt": "Reading’s red-brick Victorian Town Hall and clock tower, with people crossing the street in front",
+      "author": "Smuconlaw",
+      "licence": "CC BY-SA 4.0",
+      "licence_url": "https://creativecommons.org/licenses/by-sa/4.0",
+      "source_url": "https://commons.wikimedia.org/wiki/File:Reading_Town_Hall,_UK_-_20150707.jpg",
+      "source_name": "Wikimedia Commons",
+      "changes": "cropped and resized",
+      "widths": [
+        640,
+        1024
       ],
       "ratio": "3:2"
     }
